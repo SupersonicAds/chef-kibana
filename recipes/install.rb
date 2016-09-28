@@ -27,7 +27,7 @@ unless Chef::Config[:solo]
 end
 
 webserver = 'nginx' # make nginx a default choice
-webserver = node['kibana']['webserver'] if !!node['kibana']['webserver'].empty?
+webserver = node['kibana']['webserver'] if !node['kibana']['webserver'].empty?
 if node['kibana']['user'].empty?
   if !node['kibana']['webserver'].empty?
     kibana_user = node[webserver]['user']
