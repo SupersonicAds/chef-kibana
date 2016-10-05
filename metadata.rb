@@ -13,4 +13,4 @@ end
 
 supports 'ubuntu'
 supports 'debian'
-depends 'ohai', '~> 1.1'
+depends 'ohai'
