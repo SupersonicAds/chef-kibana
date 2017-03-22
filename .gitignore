@@ -1,7 +1,8 @@
 metadata.json
 .vagrant
-Berksfile.lock
+#Berksfile.lock
 vendor/
+.chef
 .kitchen/
 .kitchen.local.yml
 .bundle/
